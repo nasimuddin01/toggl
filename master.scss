@@ -29,6 +29,11 @@
   padding-bottom: 1vw;
 }
 
+.purple {
+  color: #CA99D7;
+  padding-top: 5vw;
+}
+
 .big {
   font-size: 3rem;
   font-family: 'Roboto', sans-serif;
@@ -205,6 +210,10 @@ body {
   .feature3 {
     background-color: #87CF8F;
   }
+
+  .feature4 {
+    background-color: #CA99D7;
+  }
 }
 // end of features section
 
@@ -213,9 +222,69 @@ body {
   background: url("https://toggl.com/common/images/spotty@2x-8b98c0510d7f4939ce97fe7065652d6a.png");
 }
 // pricing section start here
+
 #pricing {
-    height: 45vw;
-    background-color:#CA99D7;
+  padding: 5vw 10vw 10vw;
+  background-color: #FEACBA;
+
+  p {
+    padding-bottom: 5vw;
+  }
+  height: 50vw;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3vw;
+    justify-content: center;
+
+    .template {
+      border-radius: 0.5rem;
+
+      .template-image > img {
+        width: 100%;
+        border-radius: 0.5rem 0.5rem 0 0;
+      }
+
+      .template-text {
+        padding: 2vw 5vw;
+
+        .title {
+          font-size: 2rem;
+        }
+
+        .text {
+          margin-top: -3rem;
+        }
+
+        .button {
+          a {
+            padding: 1rem 2rem;
+            background-color: #E24E54;
+            color: #E3E8EB;
+            text-decoration: none;
+            border-radius: 2rem;
+            transition: background-color 0.5s;
+          }
+
+          a:hover {
+            background-color: #88DCC7;
+            color: #E3E8EB;
+          }
+        }
+      }
+      width: 25vw;
+      height: 40vw;
+      background-color: white;
+      transition: transform 0.5s, grid-gap 0.5s, width 0.5s, height 0.5s;
+    }
+
+    .template:hover {
+      width: 27vw;
+      height: 42vw;
+      transform: translateY(-2vw);
+    }
+  }
 }
 // start of get startedsection
 
@@ -241,6 +310,37 @@ body {
     a:hover {
       background-color: #1EAAE8;
       transform: translateY(-2px);
+    }
+  }
+}
+// here starts footer section
+footer {
+  background-color: #E3E8EB;
+  padding: 3vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1vw;
+  justify-content: center;
+
+  .social {
+    display: flex;
+    justify-content: center;
+    a {
+      padding: 0 1vw;
+      transition: color 0.5s;
+      i{
+        color:#1EABE8;
+        transition: color 0.3s;
+      }
+    }
+    i:hover{
+      color: #D82B07;
+    }
+  }
+
+  .credit {
+    p {
+      text-align: center;
     }
   }
 }
