@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+// utility class
+
+.white {
+  color: white;
+}
+
+.pink {
+  color: #FEACBA;
+  padding-top: 5vw;
+  padding-bottom: 1vw;
+}
+
+.yellow {
+  color: #F8CE68;
+  padding-top: 5vw;
+  padding-bottom: 1vw;
+}
+
+.green {
+  color: #86CF8F;
+  padding-top: 5vw;
+  padding-bottom: 1vw;
+}
+
+.big {
+  font-size: 3rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.medium {
+  font-size: 1.5rem;
+}
+
+.center {
+  text-align: center;
+}
+// end of utility class
+
+body {
+  font-family: 'Alatsi', sans-serif;
+}
+
+#home {
+  background-color: #CD99DB;
+}
+// navbar section
+
+.nav-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  a > img {
+    width: 6rem;
+  }
+  padding: 2rem 4rem;
+
+  .nav-menu {
+    display: flex;
+    justify-content: flex-end;
+
+    li {
+      padding: 0 1rem;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      transition: color 1s;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      a:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+.hero {
+  height: 90vh;
+  margin-top: -2vh;
+  padding: 0 4vw;
+  background-color: #CD99DB;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+
+  div {
+    padding-top: 4vh;
+
+    p {
+      padding-top: 1vh;
+    }
+  }
+
+  .hero-image {
+    margin-top: -10vh;
+
+    img {
+      width: 16rem;
+    }
+  }
+  @media(max-width: 1024px) {
+    .hero-image > img {
+      width: 80vw;
+    }
+  }
+
+  .button {
+    margin-top: -8vh;
+
+    a {
+      padding: 1rem 5rem;
+      background-color: #E3323C;
+      border-radius: 2rem;
+      text-decoration: none;
+      transition: background-color 0.5s;
+    }
+
+    a:hover {
+      background-color: #1EAAE8;
+      transform: translateX(-2px);
+    }
+  }
+}
+// feature section starts here
+
+#features {
+  padding: 5vw;
+  background-color: #E3E8EB;
+
+  .features-title {
+    padding: 0 5vw;
+  }
+
+  .item {
+    margin-top: 7vw;
+    width: 80vw;
+    height: 45vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 5vw;
+
+    .card {
+      height: 35vw;
+      width: 25vw;
+      background-color: white;
+      margin-top: -3vw;
+      padding: 3vw 5vw;
+
+      .card-title {
+        font-size: 3rem;
+        padding-bottom: 2vw;
+      }
+
+      a {
+        position: relative;
+        top: 5vw;
+        padding: 1vw 2vw;
+        background-color: #E3323C;
+        border-radius: 5vw;
+        text-decoration: none;
+        color: white;
+        transition: background-color 0.5s;
+      }
+
+      a:hover {
+        background-color: #1EAAE8;
+        transform: translateX(-2px);
+      }
+    }
+    @media(max-width: 1024px) {
+      .card {
+        .card-title {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .image {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .feature1 {
+    background-color: #FEACBA;
+  }
+
+  .feature2 {
+    background-color: #F8CE69;
+  }
+
+  .feature3 {
+    background-color: #87CF8F;
+  }
+}
+// end of features section
+
+#why {
+  height: 80vh;
+  background: url("https://toggl.com/common/images/spotty@2x-8b98c0510d7f4939ce97fe7065652d6a.png");
+}
+// pricing section start here
+#pricing {
+    height: 45vw;
+    background-color:#CA99D7;
+}
+// start of get startedsection
+
+.getstarted {
+  padding-top: 4vw;
+  height: 15vw;
+  background-color: #E3E8EB;
+
+  .trial {
+    padding-top: 2vw;
+    display: flex;
+    justify-content: center;
+
+    a {
+      padding: 1vw 4vw;
+      color: white;
+      text-decoration: none;
+      border-radius: 4rem;
+      background-color: #F4343E;
+      transition: background-color 0.5s;
+    }
+
+    a:hover {
+      background-color: #1EAAE8;
+      transform: translateY(-2px);
+    }
+  }
+}
